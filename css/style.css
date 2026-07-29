@@ -390,28 +390,108 @@ a:hover {
     background: var(--primary-light);
 }
 
-/* Prompt cards */
+/* === Prompt Cards === */
 .module-content .prompt-card {
-    background: linear-gradient(135deg, #0078d4, #005a9e);
-    color: #fff;
-    padding: 20px 24px;
+    background: #f0f6ff;
+    border: 1.5px solid #b3d0f5;
+    border-left: 4px solid var(--primary);
     border-radius: var(--radius);
-    margin: 16px 0;
-    box-shadow: var(--shadow);
+    margin: 20px 0;
+    overflow: hidden;
 }
 
-.module-content .prompt-card .prompt-label {
+.module-content .prompt-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background: #dceeff;
+    border-bottom: 1px solid #b3d0f5;
+}
+
+.module-content .prompt-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    opacity: 0.8;
-    margin-bottom: 8px;
+    letter-spacing: 0.8px;
+    color: var(--primary-dark);
 }
 
-.module-content .prompt-card .prompt-text {
+.module-content .prompt-body {
+    padding: 16px 20px;
     font-size: 15px;
-    line-height: 1.6;
+    line-height: 1.75;
+    color: var(--text);
+    font-family: var(--font);
+}
+
+.module-content .prompt-body p {
+    margin-bottom: 10px;
+}
+
+.module-content .prompt-body p:last-child {
+    margin-bottom: 0;
+}
+
+.module-content .prompt-body ol,
+.module-content .prompt-body ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.module-content .prompt-body li {
+    margin-bottom: 6px;
+}
+
+/* Copy button */
+.copy-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--primary-dark);
+    background: transparent;
+    border: 1px solid #90bce8;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+    white-space: nowrap;
+    font-family: var(--font);
+}
+
+.copy-btn:hover {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+
+.copy-btn:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* Copy icon states */
+.copy-btn .icon-check {
+    display: none;
+}
+
+.copy-btn.copied {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+}
+
+.copy-btn.copied .icon-copy {
+    display: none;
+}
+
+.copy-btn.copied .icon-check {
+    display: block;
 }
 
 /* Tip / Note boxes */
@@ -447,7 +527,110 @@ a:hover {
     margin-bottom: 4px;
 }
 
-/* Steps */
+/* === Images & Figures === */
+.module-content .content-figure {
+    margin: 28px 0;
+    text-align: center;
+}
+
+.module-content .content-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    cursor: zoom-in;
+    transition: box-shadow 0.2s, transform 0.2s;
+    display: block;
+    margin: 0 auto;
+}
+
+.module-content .content-img:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-1px);
+}
+
+.module-content .content-figure figcaption {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* === Lightbox === */
+#lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.82);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    opacity: 0;
+    transition: opacity 0.22s ease;
+    cursor: zoom-out;
+}
+
+#lightbox-overlay.open {
+    opacity: 1;
+}
+
+.lightbox-inner {
+    position: relative;
+    max-width: min(90vw, 1100px);
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    cursor: default;
+}
+
+.lightbox-img {
+    max-width: 100%;
+    max-height: 80vh;
+    height: auto;
+    border-radius: var(--radius);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+.lightbox-caption {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -44px;
+    right: -4px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s;
+}
+
+.lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.28);
+}
+
+.lightbox-close:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
 .module-content .steps {
     counter-reset: step;
 }
@@ -516,3 +699,4 @@ a:hover {
         font-size: 1.8rem;
     }
 }
+

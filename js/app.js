@@ -76,13 +76,12 @@ function processCustomBlocks() {
                 .replace('<strong>Note:</strong>', '')
                 .replace('<strong>Ghi chú:</strong>', '');
         } else if (text.includes('[!PROMPT]') || text.includes('**PROMPT:**')) {
-            bq.className = 'prompt-card';
-            bq.innerHTML = `<div class="prompt-label">PROMPT</div><div class="prompt-text">${
-                text
-                    .replace('<p>[!PROMPT]</p>', '')
-                    .replace('[!PROMPT]', '')
-                    .replace('<strong>PROMPT:</strong>', '')
-            }</div>`;
+            const promptInner = text
+                .replace('<p>[!PROMPT]</p>', '')
+                .replace('[!PROMPT]', '')
+                .replace('<strong>PROMPT:</strong>', '')
+                .trim();
+            bq.outerHTML = buildPromptCard(promptInner);
         }
     });
 
@@ -90,13 +89,161 @@ function processCustomBlocks() {
     content.querySelectorAll('pre code').forEach(code => {
         if (code.textContent.trim().startsWith('PROMPT:')) {
             const pre = code.parentElement;
-            const promptText = code.textContent.replace('PROMPT:', '').trim();
-            const card = document.createElement('div');
-            card.className = 'prompt-card';
-            card.innerHTML = `<div class="prompt-label">PROMPT</div><div class="prompt-text">${promptText}</div>`;
-            pre.replaceWith(card);
+            const promptText = escapeHtml(code.textContent.replace('PROMPT:', '').trim());
+            pre.outerHTML = buildPromptCard(`<p>${promptText}</p>`);
         }
     });
+
+    // Enhance images: wrap in figure, add caption from alt text, make clickable
+    content.querySelectorAll('img').forEach(img => {
+        if (img.closest('figure')) return; // already processed
+        const figure = document.createElement('figure');
+        figure.className = 'content-figure';
+        img.classList.add('content-img');
+        img.setAttribute('loading', 'lazy');
+
+        // Insert figure before img, move img inside
+        img.parentNode.insertBefore(figure, img);
+        figure.appendChild(img);
+
+        // Add caption from alt text if present
+        if (img.alt && img.alt.trim()) {
+            const caption = document.createElement('figcaption');
+            caption.textContent = img.alt;
+            figure.appendChild(caption);
+        }
+
+        // Click to enlarge
+        img.addEventListener('click', () => openLightbox(img.src, img.alt));
+        img.title = 'Nhấn để phóng to';
+    });
+
+    // Attach copy handlers to all prompt cards (after DOM update)
+    attachCopyHandlers();
+}
+
+// Build a prompt card HTML string with a copy button
+function buildPromptCard(innerHtml) {
+    // Extract plain text for clipboard (strip tags)
+    const tmp = document.createElement('div');
+    tmp.innerHTML = innerHtml;
+    const plainText = (tmp.textContent || tmp.innerText || '').trim();
+
+    return `<div class="prompt-card">
+        <div class="prompt-card-header">
+            <span class="prompt-label">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M2 4a2 2 0 0 1 2-2h5.586A2 2 0 0 1 11 2.586L13.414 5A2 2 0 0 1 14 6.414V12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                    <path d="M6 9h4M6 12h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                Prompt
+            </span>
+            <button class="copy-btn" data-copy="${escapeAttr(plainText)}" aria-label="Sao chép prompt">
+                <svg class="icon-copy" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <rect x="5" y="5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M11 5V3.5A1.5 1.5 0 0 0 9.5 2h-6A1.5 1.5 0 0 0 2 3.5v6A1.5 1.5 0 0 0 3.5 11H5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <svg class="icon-check" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="copy-label">Sao chép</span>
+            </button>
+        </div>
+        <div class="prompt-body">${innerHtml}</div>
+    </div>`;
+}
+
+// Attach click handlers to copy buttons
+function attachCopyHandlers() {
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+        // Remove existing listener by cloning
+        const fresh = btn.cloneNode(true);
+        btn.parentNode.replaceChild(fresh, btn);
+
+        fresh.addEventListener('click', async () => {
+            const text = fresh.dataset.copy;
+            try {
+                await navigator.clipboard.writeText(text);
+                fresh.classList.add('copied');
+                fresh.querySelector('.copy-label').textContent = 'Đã sao chép!';
+                setTimeout(() => {
+                    fresh.classList.remove('copied');
+                    fresh.querySelector('.copy-label').textContent = 'Sao chép';
+                }, 2000);
+            } catch {
+                // Fallback for older browsers
+                const ta = document.createElement('textarea');
+                ta.value = text;
+                ta.style.position = 'fixed';
+                ta.style.opacity = '0';
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+                fresh.classList.add('copied');
+                fresh.querySelector('.copy-label').textContent = 'Đã sao chép!';
+                setTimeout(() => {
+                    fresh.classList.remove('copied');
+                    fresh.querySelector('.copy-label').textContent = 'Sao chép';
+                }, 2000);
+            }
+        });
+    });
+}
+
+// Lightbox
+function openLightbox(src, alt) {
+    const existing = document.getElementById('lightbox-overlay');
+    if (existing) existing.remove();
+
+    const overlay = document.createElement('div');
+    overlay.id = 'lightbox-overlay';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-label', alt || 'Hình ảnh phóng to');
+    overlay.innerHTML = `
+        <div class="lightbox-inner">
+            <button class="lightbox-close" aria-label="Đóng">&times;</button>
+            <img src="${escapeAttr(src)}" alt="${escapeAttr(alt || '')}" class="lightbox-img" />
+            ${alt ? `<p class="lightbox-caption">${escapeHtml(alt)}</p>` : ''}
+        </div>
+    `;
+    document.body.appendChild(overlay);
+
+    // Close handlers
+    overlay.addEventListener('click', e => {
+        if (e.target === overlay) closeLightbox();
+    });
+    overlay.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', handleLightboxKey);
+
+    // Animate in
+    requestAnimationFrame(() => overlay.classList.add('open'));
+}
+
+function closeLightbox() {
+    const overlay = document.getElementById('lightbox-overlay');
+    if (!overlay) return;
+    overlay.classList.remove('open');
+    overlay.addEventListener('transitionend', () => overlay.remove(), { once: true });
+    document.removeEventListener('keydown', handleLightboxKey);
+}
+
+function handleLightboxKey(e) {
+    if (e.key === 'Escape') closeLightbox();
+}
+
+// Utility: escape HTML for text nodes
+function escapeHtml(str) {
+    return str
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+}
+
+// Utility: escape for HTML attribute values
+function escapeAttr(str) {
+    return str.replace(/"/g, '&quot;').replace(/\n/g, ' ');
 }
 
 // Update the sidebar navigation
