@@ -1,4 +1,4 @@
-# Module 2 — Prompting Fundamentals
+# Module 3 — Prompting Fundamentals
 
 **Thời lượng:** 20 phút
 

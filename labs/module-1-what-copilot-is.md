@@ -1,4 +1,4 @@
-# Module 1 — What Copilot is
+# Module 2 — What Copilot is
 
 **Thời lượng:** 10 phút
 
@@ -89,4 +89,4 @@ Copilot rất hữu ích nhưng cũng có giới hạn:
 3. Dữ liệu không dùng để train model
 4. Luôn review kết quả — Copilot là trợ lý, không phải oracle
 
-Sẵn sàng học cách viết prompt hiệu quả? Chuyển sang **Module 2**!
+Sẵn sàng học cách viết prompt hiệu quả? Chuyển sang **Module 3**!

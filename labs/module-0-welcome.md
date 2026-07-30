@@ -1,4 +1,4 @@
-# Module 0 — Welcome and Licence Check
+# Module 1 — Welcome and Licence Check
 
 **Thời lượng:** 10 phút
 
@@ -69,15 +69,24 @@ Trước khi bắt đầu, hãy đảm bảo Copilot đã được kích hoạt:
 
 | Thời gian | Nội dung |
 |-----------|----------|
-| 09:00 – 09:10 | Welcome and licence check (đang ở đây) |
-| 09:10 – 09:20 | What Copilot is |
-| 09:20 – 09:40 | Prompting fundamentals |
+| 09:00 – 09:10 | Module 1: Welcome and licence check (đang ở đây) |
+| 09:10 – 09:20 | Module 2: What Copilot is |
+| 09:20 – 09:40 | Module 3: Prompting fundamentals |
 | 09:40 – 10:05 | Lab 1: Outlook and Teams |
 | 10:05 – 10:10 | Break |
 | 10:10 – 10:35 | Lab 2: Word and PowerPoint |
 | 10:35 – 10:55 | Lab 3: Excel and the Copilot app |
-| 10:55 – 11:00 | Wrap and homework |
+| 10:55 – 11:20 | Lab 4: AI Agent với Agent Builder |
+| 11:20 – 11:25 | Wrap and homework |
 
 ---
 
-Sẵn sàng chưa? Hãy chuyển sang **Module 1** để tìm hiểu Copilot là gì!
+## Tải file demo
+
+Các file demo dưới đây sẽ được dùng xuyên suốt các Lab. Hãy tải về và lưu vào **OneDrive** trước khi bắt đầu.
+
+[download-files]
+
+---
+
+Sẵn sàng chưa? Hãy chuyển sang **Module 2** để tìm hiểu Copilot là gì!
