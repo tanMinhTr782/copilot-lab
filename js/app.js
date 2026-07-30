@@ -7,14 +7,15 @@ const demoFiles = [
 
 // Module definitions with their markdown file paths
 const modules = {
-    'module-0': { title: 'Module 1 — Welcome and licence check', file: 'labs/module-1/index.md' },
-    'module-1': { title: 'Module 2 — What Copilot is', file: 'labs/module-2/index.md' },
-    'module-2': { title: 'Module 3 — Prompting fundamentals', file: 'labs/module-3/index.md' },
-    'lab-1':    { title: 'Lab 1 — Outlook and Teams', file: 'labs/lab-1/index.md' },
-    'lab-2':    { title: 'Lab 2 — Word and PowerPoint', file: 'labs/lab-2/index.md' },
-    'lab-3':    { title: 'Lab 3 — Excel and the Copilot app', file: 'labs/lab-3/index.md' },
-    'lab-4':    { title: 'Lab 4 — AI Agent với Agent Builder', file: 'labs/lab-4/index.md' },
-    'wrap':     { title: 'Wrap and homework', file: 'labs/wrap/index.md' }
+    'module-0': { title: 'Module 1 — Chào mừng và kiểm tra licence', file: 'labs/module-1/index.md' },
+    'module-1': { title: 'Module 2 — Copilot là gì', file: 'labs/module-2/index.md' },
+    'module-2': { title: 'Module 3 — Nền tảng viết prompt', file: 'labs/module-3/index.md' },
+    'lab-1':    { title: 'Lab 1 — Outlook và Teams', file: 'labs/lab-1/index.md' },
+    'lab-2':    { title: 'Lab 2 — Word và PowerPoint', file: 'labs/lab-2/index.md' },
+    'lab-3':    { title: 'Lab 3 — Excel và ứng dụng Copilot', file: 'labs/lab-3/index.md' },
+    'lab-4':    { title: 'Lab 4 — Agent dựng sẵn của Microsoft', file: 'labs/lab-4/index.md' },
+    'lab-5':    { title: 'Lab 5 — AI Agent với Agent Builder', file: 'labs/lab-5/index.md' },
+    'wrap':     { title: 'Tổng kết và bài tập về nhà', file: 'labs/wrap/index.md' }
 };
 
 // Current active module

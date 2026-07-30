@@ -1,4 +1,4 @@
-# Lab 1 — Outlook and Teams
+# Lab 1 — Outlook và Teams
 
 **Thời lượng:** 25 phút | **Ứng dụng:** Outlook, Teams
 
@@ -6,7 +6,7 @@
 
 ## Mục tiêu
 
-Sau khi hoàn thành lab này, bạn sẽ có thể:
+Sau khi hoàn thành lab này, anh/chị sẽ có thể:
 
 - Sử dụng Copilot trong Outlook để tóm tắt chuỗi email dài
 - Soạn email trả lời nhanh với giọng điệu chuyên nghiệp
@@ -28,7 +28,7 @@ Sau khi hoàn thành lab này, bạn sẽ có thể:
 
 | Tính năng | Mô tả |
 |-----------|--------|
-| **Email Summarizing** | Tóm tắt nội dung chuỗi email dài, nêu bật quyết định và action items |
+| **Email Summarizing** | Tóm tắt nội dung chuỗi email dài, nêu bật quyết định và các đầu việc cần làm |
 | **Email Drafting** | Soạn email mới hoặc trả lời dựa trên ngữ cảnh cuộc trò chuyện |
 | **Email Coaching** | Gợi ý cải thiện giọng điệu, độ rõ ràng và cấu trúc email |
 
@@ -45,7 +45,7 @@ Sau khi hoàn thành lab này, bạn sẽ có thể:
 > Tóm tắt các email tôi đã nhận được trong 3 ngày qua. Trình bày nội dung dưới dạng bảng, gồm các cột: Chủ đề | Thời gian | Người gửi | Tóm tắt | Việc cần làm | Theo dõi
 
 > [!TIP]
-> Bạn có thể điều chỉnh prompt bằng cách thêm các yêu cầu cụ thể, ví dụ: "Chỉ liệt kê email cần tôi phê duyệt" hoặc "Ưu tiên email từ Ban Giám đốc".
+> Anh/chị có thể điều chỉnh prompt bằng cách thêm các yêu cầu cụ thể, ví dụ: "Chỉ liệt kê email cần tôi phê duyệt" hoặc "Ưu tiên email từ Ban Giám đốc".
 
 ### Bài tập 2: Dịch email
 
@@ -72,7 +72,7 @@ Sau khi hoàn thành lab này, bạn sẽ có thể:
 > Soạn email xác nhận tham gia cuộc họp vào tuần tới và đề nghị bên kia gửi thời gian phù hợp.
 
 > [!NOTE]
-> Sau khi Copilot tạo bản nháp, bạn nên đọc lại và chỉnh sửa trước khi gửi. Copilot là trợ lý — bạn vẫn là người ra quyết định cuối cùng.
+> Sau khi Copilot tạo bản nháp, anh/chị nên đọc lại và chỉnh sửa trước khi gửi. Copilot là trợ lý — anh/chị vẫn là người ra quyết định cuối cùng.
 
 ---
 
@@ -88,7 +88,7 @@ Sau khi hoàn thành lab này, bạn sẽ có thể:
 
 | Tính năng | Mô tả |
 |-----------|--------|
-| **Meeting Recap** | Tóm tắt cuộc họp với các điểm chính, quyết định và action items |
+| **Meeting Recap** | Tóm tắt cuộc họp với các điểm chính, quyết định và các đầu việc cần làm |
 | **Translated Live Captions** | Phụ đề dịch theo thời gian thực trong cuộc họp |
 | **Interpreter** | Nghe nội dung cuộc họp bằng ngôn ngữ mong muốn |
 | **In-meeting Q&A** | Hỏi Copilot về nội dung đang được thảo luận |
@@ -116,7 +116,7 @@ Sau khi hoàn thành lab này, bạn sẽ có thể:
 
 > **PROMPT:**
 >
-> Tạo biên bản cho cuộc họp này. Trình bày nội dung dưới dạng bảng, gồm các cột: Mục tiêu | Nội dung thảo luận | Quyết định chính | Next step | Người phụ trách | Thời hạn
+> Tạo biên bản cho cuộc họp này. Trình bày nội dung dưới dạng bảng, gồm các cột: Mục tiêu | Nội dung thảo luận | Quyết định chính | Bước tiếp theo | Người phụ trách | Thời hạn
 
 > [!TIP]
 > Để Copilot có thể tóm tắt cuộc họp, tính năng **Transcription** hoặc **Recording** cần được bật trong cuộc họp.
@@ -125,7 +125,7 @@ Sau khi hoàn thành lab này, bạn sẽ có thể:
 
 ## Tự thực hành
 
-Hãy thử áp dụng với công việc thực tế của bạn:
+Hãy thử áp dụng với công việc thực tế của anh/chị:
 
 1. Mở Outlook và tóm tắt 3 chuỗi email quan trọng nhất trong tuần
 2. Soạn 1 email trả lời sử dụng Copilot
@@ -135,10 +135,10 @@ Hãy thử áp dụng với công việc thực tế của bạn:
 
 ## Tổng kết
 
-| Bạn đã học được | Ứng dụng |
+| Anh/chị đã học được | Ứng dụng |
 |-----------------|----------|
 | Tóm tắt chuỗi email dài | Outlook |
 | Soạn và dịch email | Outlook |
-| Tóm tắt cuộc họp real-time | Teams |
+| Tóm tắt cuộc họp theo thời gian thực | Teams |
 | Tạo biên bản cuộc họp | Teams |
 | Sử dụng Translated Live Captions | Teams |

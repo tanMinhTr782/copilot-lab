@@ -1,20 +1,20 @@
-# Module 1 — Welcome and Licence Check
+# Module 1 — Chào mừng và kiểm tra licence
 
 **Thời lượng:** 10 phút
 
 ---
 
-## Chào mừng đến với Copilot Essentials
+## Chào mừng đến với Microsoft 365 Copilot Hands-on Lab
 
-Chào mừng bạn đến với buổi training **Day 2 — Copilot Essentials**. Đây là buổi thực hành đầu tiên sau khi tài khoản Microsoft 365 Copilot của bạn đã được kích hoạt.
+Chào mừng anh/chị đến với buổi training **Microsoft 365 Copilot — Hands-on Lab**. Đây là buổi thực hành đầu tiên sau khi tài khoản Microsoft 365 Copilot của anh/chị đã được kích hoạt.
 
 ---
 
 ## Tại sao chúng ta ở đây?
 
-- Giúp bạn **bắt đầu sử dụng Copilot** với chính công việc thực tế hàng ngày
+- Giúp anh/chị **bắt đầu sử dụng Copilot** với chính công việc thực tế hàng ngày
 - Đảm bảo mỗi người đều có thể chạy prompt thành công
-- Xây dựng thói quen sử dụng AI như một phần tự nhiên trong workflow
+- Xây dựng thói quen sử dụng AI như một phần tự nhiên trong quy trình làm việc
 
 ---
 
@@ -24,17 +24,17 @@ Chào mừng bạn đến với buổi training **Day 2 — Copilot Essentials**
 
 ---
 
-## Ground Rule: Real Work Only
+## Nguyên tắc: Chỉ dùng dữ liệu công việc thật
 
 Trong buổi training này, chúng ta sẽ:
 
-- ✅ Sử dụng **email thật** của bạn để thực hành với Outlook
+- ✅ Sử dụng **email thật** của anh/chị để thực hành với Outlook
 - ✅ Sử dụng **file thật** trên OneDrive/SharePoint
 - ✅ Sử dụng **cuộc họp thật** trong Teams
 - ❌ **Không** dùng dữ liệu mẫu hoặc giả lập
 
 > [!NOTE]
-> Mục đích là bạn rời khỏi buổi học với trải nghiệm thực tế, biết chính xác Copilot giúp được gì trong công việc hàng ngày.
+> Mục đích là anh/chị rời khỏi buổi học với trải nghiệm thực tế, biết chính xác Copilot giúp được gì trong công việc hàng ngày.
 
 ---
 
@@ -46,7 +46,7 @@ Trước khi bắt đầu, hãy đảm bảo Copilot đã được kích hoạt:
 
 1. Mở **Outlook** (web hoặc desktop)
 2. Tìm biểu tượng **Copilot** trên ribbon/toolbar
-3. Nếu thấy biểu tượng Copilot → ✅ Bạn đã sẵn sàng
+3. Nếu thấy biểu tượng Copilot → ✅ Anh/chị đã sẵn sàng
 
 ### Cách kiểm tra trong Teams
 
@@ -58,10 +58,10 @@ Trước khi bắt đầu, hãy đảm bảo Copilot đã được kích hoạt:
 
 1. Mở bất kỳ ứng dụng nào (Word, Excel, PowerPoint)
 2. Tìm nút **Copilot** trên ribbon
-3. Nếu thấy → ✅ Licence đã active
+3. Nếu thấy → ✅ Licence đã được kích hoạt
 
 > [!TIP]
-> Nếu bạn không thấy biểu tượng Copilot, hãy báo ngay cho trainer để được hỗ trợ kiểm tra licence.
+> Nếu anh/chị không thấy biểu tượng Copilot, hãy báo ngay cho giảng viên để được hỗ trợ kiểm tra licence.
 
 ---
 
@@ -69,15 +69,16 @@ Trước khi bắt đầu, hãy đảm bảo Copilot đã được kích hoạt:
 
 | Thời gian | Nội dung |
 |-----------|----------|
-| 09:00 – 09:10 | Module 1: Welcome and licence check (đang ở đây) |
-| 09:10 – 09:20 | Module 2: What Copilot is |
-| 09:20 – 09:40 | Module 3: Prompting fundamentals |
-| 09:40 – 10:05 | Lab 1: Outlook and Teams |
-| 10:05 – 10:10 | Break |
-| 10:10 – 10:35 | Lab 2: Word and PowerPoint |
-| 10:35 – 10:55 | Lab 3: Excel and the Copilot app |
-| 10:55 – 11:20 | Lab 4: AI Agent với Agent Builder |
-| 11:20 – 11:25 | Wrap and homework |
+| 09:00 – 09:10 | Module 1: Chào mừng và kiểm tra licence (đang ở đây) |
+| 09:10 – 09:20 | Module 2: Copilot là gì |
+| 09:20 – 09:40 | Module 3: Nền tảng viết prompt |
+| 09:40 – 10:05 | Lab 1: Outlook và Teams |
+| 10:05 – 10:10 | Nghỉ giải lao |
+| 10:10 – 10:35 | Lab 2: Word và PowerPoint |
+| 10:35 – 10:55 | Lab 3: Excel và ứng dụng Copilot |
+| 11:00 – 11:15 | Lab 4: Agent dựng sẵn của Microsoft |
+| 11:15 – 11:35 | Lab 5: AI Agent với Agent Builder |
+| 11:35 – 11:40 | Tổng kết và bài tập về nhà |
 
 ---
 

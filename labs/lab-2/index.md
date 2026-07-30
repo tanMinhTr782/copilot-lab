@@ -1,4 +1,4 @@
-# Lab 2 — Word and PowerPoint
+# Lab 2 — Word và PowerPoint
 
 **Thời lượng:** 25 phút | **Ứng dụng:** Word, PowerPoint
 
@@ -6,7 +6,7 @@
 
 ## Mục tiêu
 
-Sau khi hoàn thành lab này, bạn sẽ có thể:
+Sau khi hoàn thành lab này, anh/chị sẽ có thể:
 
 - Sử dụng Copilot trong Word để dịch và định dạng tài liệu
 - Phân tích nội dung tài liệu với Copilot
@@ -27,7 +27,7 @@ Sau khi hoàn thành lab này, bạn sẽ có thể:
 
 | Tính năng | Mô tả |
 |-----------|--------|
-| **Document Translation** | Dịch toàn bộ tài liệu sang ngôn ngữ khác, giữ nguyên format |
+| **Document Translation** | Dịch toàn bộ tài liệu sang ngôn ngữ khác, giữ nguyên định dạng |
 | **Document Formatting** | Chuẩn hóa font, heading, đánh số trang |
 | **Content Analysis** | Phân tích và trích xuất thông tin quan trọng từ tài liệu |
 | **Rewrite & Expand** | Viết lại đoạn văn với giọng điệu khác hoặc mở rộng nội dung |
@@ -46,7 +46,7 @@ Sau khi hoàn thành lab này, bạn sẽ có thể:
 > 2. Kiểm tra bản dịch hiện tại và đề xuất các chỉnh sửa để văn phong tự nhiên hơn.
 
 > [!TIP]
-> Copilot giữ nguyên định dạng, cấu trúc và nội dung kinh doanh của văn bản khi dịch. Bạn có thể yêu cầu dịch sang bất kỳ ngôn ngữ nào.
+> Copilot giữ nguyên định dạng, cấu trúc và nội dung kinh doanh của văn bản khi dịch. Anh/chị có thể yêu cầu dịch sang bất kỳ ngôn ngữ nào.
 
 ### Bài tập 2: Phân tích tài liệu
 
@@ -60,13 +60,13 @@ Sau khi hoàn thành lab này, bạn sẽ có thể:
 > Phân tích tài liệu này và xác định:
 > - Các điểm chính cần lưu ý
 > - Rủi ro tiềm ẩn hoặc điều khoản bất lợi
-> - Các action items được đề cập
+> - Các đầu việc cần làm được đề cập
 
 ### Bài tập 3: Chuẩn hóa định dạng
 
 **Cách thực hiện:**
 
-1. Mở tài liệu cần format lại
+1. Mở tài liệu cần định dạng lại
 2. Nhập prompt:
 
 > **PROMPT:**
@@ -74,7 +74,7 @@ Sau khi hoàn thành lab này, bạn sẽ có thể:
 > Chuyển toàn bộ nội dung trong tài liệu này thành font Arial, đồng thời đánh số trang và chuẩn hóa toàn bộ heading, subheading.
 
 > [!NOTE]
-> Copilot có thể thay đổi font và cấu trúc heading, nhưng một số thay đổi phức tạp về layout có thể cần chỉnh thủ công.
+> Copilot có thể thay đổi font và cấu trúc heading, nhưng một số thay đổi phức tạp về bố cục có thể cần chỉnh thủ công.
 
 ---
 
@@ -108,7 +108,7 @@ Sau khi hoàn thành lab này, bạn sẽ có thể:
 > Tạo cho tôi một bài thuyết trình từ file này /Đề xuất hợp tác xuất khẩu Nhật Bản.docx
 
 > [!TIP]
-> Bạn có thể tham chiếu file Word trên OneDrive/SharePoint bằng cách gõ "/" để Copilot gợi ý file. File cần được lưu trên cloud (OneDrive hoặc SharePoint).
+> Anh/chị có thể tham chiếu file Word trên OneDrive/SharePoint bằng cách gõ "/" để Copilot gợi ý file. File cần được lưu trên cloud (OneDrive hoặc SharePoint).
 
 ### Bài tập 5: Tạo speaker notes
 
@@ -130,13 +130,13 @@ Sau khi hoàn thành lab này, bạn sẽ có thể:
 
 > **PROMPT:**
 >
-> Chuyển đổi font của toàn bộ slide thành font Segoe UI và cỡ chữ 14pt cho body text, 28pt cho title.
+> Chuyển đổi font của toàn bộ slide thành font Segoe UI và cỡ chữ 14pt cho nội dung, 28pt cho tiêu đề.
 
 ---
 
 ## Tự thực hành
 
-Hãy thử áp dụng với công việc thực tế của bạn:
+Hãy thử áp dụng với công việc thực tế của anh/chị:
 
 1. Chọn 1 tài liệu Word và thử dịch sang tiếng Anh
 2. Dùng Copilot để tạo bài PowerPoint từ tài liệu đó
@@ -146,11 +146,11 @@ Hãy thử áp dụng với công việc thực tế của bạn:
 
 ## Tổng kết
 
-| Bạn đã học được | Ứng dụng |
+| Anh/chị đã học được | Ứng dụng |
 |-----------------|----------|
-| Dịch tài liệu giữ nguyên format | Word |
+| Dịch tài liệu giữ nguyên định dạng | Word |
 | Phân tích và trích xuất thông tin | Word |
 | Chuẩn hóa định dạng tài liệu | Word |
-| Tạo deck từ file Word | PowerPoint |
+| Tạo bài thuyết trình từ file Word | PowerPoint |
 | Tạo speaker notes tự động | PowerPoint |
 | Chuẩn hóa font toàn bộ slide | PowerPoint |
