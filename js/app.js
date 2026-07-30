@@ -7,14 +7,14 @@ const demoFiles = [
 
 // Module definitions with their markdown file paths
 const modules = {
-    'module-0': { title: 'Module 1 — Welcome and licence check', file: 'labs/module-0-welcome.md' },
-    'module-1': { title: 'Module 2 — What Copilot is', file: 'labs/module-1-what-copilot-is.md' },
-    'module-2': { title: 'Module 3 — Prompting fundamentals', file: 'labs/module-2-prompting-fundamentals.md' },
-    'lab-1':    { title: 'Lab 1 — Outlook and Teams', file: 'labs/lab-1-outlook-teams.md' },
-    'lab-2':    { title: 'Lab 2 — Word and PowerPoint', file: 'labs/lab-2-word-powerpoint.md' },
-    'lab-3':    { title: 'Lab 3 — Excel and the Copilot app', file: 'labs/lab-3-excel-copilot.md' },
-    'lab-4':    { title: 'Lab 4 — AI Agent với Agent Builder', file: 'labs/lab-4-agent-builder.md' },
-    'wrap':     { title: 'Wrap and homework', file: 'labs/wrap-homework.md' }
+    'module-0': { title: 'Module 1 — Welcome and licence check', file: 'labs/module-1/index.md' },
+    'module-1': { title: 'Module 2 — What Copilot is', file: 'labs/module-2/index.md' },
+    'module-2': { title: 'Module 3 — Prompting fundamentals', file: 'labs/module-3/index.md' },
+    'lab-1':    { title: 'Lab 1 — Outlook and Teams', file: 'labs/lab-1/index.md' },
+    'lab-2':    { title: 'Lab 2 — Word and PowerPoint', file: 'labs/lab-2/index.md' },
+    'lab-3':    { title: 'Lab 3 — Excel and the Copilot app', file: 'labs/lab-3/index.md' },
+    'lab-4':    { title: 'Lab 4 — AI Agent với Agent Builder', file: 'labs/lab-4/index.md' },
+    'wrap':     { title: 'Wrap and homework', file: 'labs/wrap/index.md' }
 };
 
 // Current active module
