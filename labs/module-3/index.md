@@ -1,4 +1,4 @@
-# Module 3 — Nền tảng viết prompt
+# Module 3 - Nền tảng viết prompt
 
 **Thời lượng:** 20 phút
 

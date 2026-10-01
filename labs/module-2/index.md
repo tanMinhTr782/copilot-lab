@@ -1,4 +1,4 @@
-# Module 2 — Copilot là gì
+# Module 2 - Copilot là gì
 
 **Thời lượng:** 10 phút
 
@@ -6,16 +6,16 @@
 
 ## Microsoft 365 Copilot là gì?
 
-Microsoft 365 Copilot là trợ lý AI được tích hợp trực tiếp vào các ứng dụng Microsoft 365 mà anh/chị sử dụng hàng ngày — Word, Excel, PowerPoint, Outlook, Teams, và hơn thế nữa.
+Microsoft 365 Copilot là trợ lý AI được tích hợp trực tiếp vào các ứng dụng Microsoft 365 mà anh/chị sử dụng hàng ngày - Word, Excel, PowerPoint, Outlook, Teams, và hơn thế nữa.
 
 Copilot kết hợp:
-- **Large Language Models (LLMs)** — khả năng hiểu và tạo ngôn ngữ tự nhiên
-- **Microsoft Graph** — dữ liệu công việc của anh/chị (email, file, cuộc họp, chat)
-- **Ứng dụng Microsoft 365** — nơi anh/chị làm việc mỗi ngày
+- **Large Language Models (LLMs)** - khả năng hiểu và tạo ngôn ngữ tự nhiên
+- **Microsoft Graph** - dữ liệu công việc của anh/chị (email, file, cuộc họp, chat)
+- **Ứng dụng Microsoft 365** - nơi anh/chị làm việc mỗi ngày
 
 ---
 
-## Work IQ — Copilot hiểu ngữ cảnh công việc
+## Work IQ - Copilot hiểu ngữ cảnh công việc
 
 Copilot không chỉ là chatbot thông thường. Nhờ kết nối với Microsoft Graph, Copilot có thể:
 
@@ -24,7 +24,7 @@ Copilot không chỉ là chatbot thông thường. Nhờ kết nối với Micro
 - Xem **cuộc họp** và transcript trong Teams
 - Hiểu **ai đang làm gì** trong tổ chức
 
-> Đây được gọi là **Work IQ** — khả năng hiểu ngữ cảnh công việc cụ thể của anh/chị.
+> Đây được gọi là **Work IQ** - khả năng hiểu ngữ cảnh công việc cụ thể của anh/chị.
 
 ---
 
@@ -59,10 +59,10 @@ Copilot không chỉ là chatbot thông thường. Nhờ kết nối với Micro
 
 Copilot rất hữu ích nhưng cũng có giới hạn:
 
-- **Không phải lúc nào cũng đúng** — Copilot có thể "hallucinate" (đưa ra thông tin không chính xác)
-- **Không thay thế chuyên gia** — Kết quả cần được người dùng rà soát
-- **Phụ thuộc vào chất lượng dữ liệu** — "Dữ liệu vào kém, kết quả ra kém"
-- **Giới hạn về ngữ cảnh** — Không thể xử lý file quá lớn hoặc quá nhiều thông tin cùng lúc
+- **Không phải lúc nào cũng đúng** - Copilot có thể "hallucinate" (đưa ra thông tin không chính xác)
+- **Không thay thế chuyên gia** - Kết quả cần được người dùng rà soát
+- **Phụ thuộc vào chất lượng dữ liệu** - "Dữ liệu vào kém, kết quả ra kém"
+- **Giới hạn về ngữ cảnh** - Không thể xử lý file quá lớn hoặc quá nhiều thông tin cùng lúc
 
 > [!TIP]
 > Luôn **rà soát kết quả** trước khi sử dụng. Copilot là trợ lý, không phải người ra quyết định. Anh/chị chịu trách nhiệm cuối cùng với kết quả.
@@ -87,6 +87,6 @@ Copilot rất hữu ích nhưng cũng có giới hạn:
 1. Copilot = LLM + Microsoft Graph + Ứng dụng M365
 2. Chỉ truy cập dữ liệu anh/chị có quyền xem
 3. Dữ liệu không dùng để huấn luyện mô hình
-4. Luôn rà soát kết quả — Copilot là trợ lý, không phải nguồn chân lý tuyệt đối
+4. Luôn rà soát kết quả - Copilot là trợ lý, không phải nguồn chân lý tuyệt đối
 
 Sẵn sàng học cách viết prompt hiệu quả? Chuyển sang **Module 3**!

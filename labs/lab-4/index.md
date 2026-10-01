@@ -1,6 +1,6 @@
-# Lab 4 — Agent dựng sẵn của Microsoft (Researcher & Analyst)
+# Lab 4 - Agent dựng sẵn của Microsoft (Researcher & Analyst)
 
-**Thời lượng:** 15 phút | **Ứng dụng:** Microsoft 365 Copilot — Frontier Agents
+**Thời lượng:** 20 phút | **Ứng dụng:** Microsoft 365 Copilot - Frontier Agents
 
 ---
 
@@ -20,8 +20,8 @@ Trước khi tự tay xây dựng agent ở Lab 5, hãy làm quen với các **a
 | Khái niệm | Giải thích |
 |-----------|------------|
 | **Frontier Agent** | Nhóm agent dựng sẵn của Microsoft, chạy trên các mô hình suy luận (reasoning) tiên tiến. Được tối ưu cho các tác vụ chuyên sâu, không chỉ trò chuyện thông thường |
-| **Researcher** | Agent chuyên **suy luận và tổng hợp** — đọc tài liệu dài, đối chiếu chéo nhiều phần, và tạo ra phân tích ở cấp độ điều hành. Coi như "cố vấn chiến lược" của anh/chị |
-| **Analyst** | Agent chuyên **xử lý dữ liệu** — trích bảng từ tài liệu, tính toán, dựng mô hình, tạo biểu đồ và xuất file Excel. Coi như "chuyên viên mô hình tài chính" của anh/chị |
+| **Researcher** | Agent chuyên **suy luận và tổng hợp** - đọc tài liệu dài, đối chiếu chéo nhiều phần, và tạo ra phân tích ở cấp độ điều hành. Coi như "cố vấn chiến lược" của anh/chị |
+| **Analyst** | Agent chuyên **xử lý dữ liệu** - trích bảng từ tài liệu, tính toán, dựng mô hình, tạo biểu đồ và xuất file Excel. Coi như "chuyên viên mô hình tài chính" của anh/chị |
 | **Grounding** | Neo câu trả lời của agent vào một nguồn dữ liệu cụ thể (ở đây là file PDF anh/chị tải lên) để đảm bảo độ chính xác |
 
 > [!NOTE]
@@ -33,7 +33,7 @@ Trước khi tự tay xây dựng agent ở Lab 5, hãy làm quen với các **a
 
 Cả hai tình huống dưới đây đều dùng chung một file PDF báo cáo mẫu.
 
-1. Tải file báo cáo mẫu: [Contoso Grand Hotel Performance Report](https://microsoft.github.io/mcs-labs/labs/agent-builder-m365/)
+1. Tải file báo cáo mẫu: [Contoso Grand Hotel Performance Report](https://github.com/microsoft/mcs-labs/raw/main/labs/agent-builder-m365/Contoso_Grand_Hotel_Performance_Report.pdf)
 2. Lưu vào nơi dễ tìm (Desktop hoặc Downloads)
 
 > [!NOTE]
@@ -41,7 +41,7 @@ Cả hai tình huống dưới đây đều dùng chung một file PDF báo cáo
 
 ---
 
-## Tình huống 3: Phân tích chuyên sâu với Researcher agent
+## Tình huống 1: Phân tích chuyên sâu với Researcher agent
 
 > **Bối cảnh:** Anh/chị là Phó Chủ tịch vùng đang xem xét báo cáo hoạt động thường niên của Contoso Grand Hotel & Resort. Thay vì tự đọc hết 18 phần, anh/chị muốn dùng Researcher agent để nhanh chóng xác định các vấn đề vận hành cấp bách nhất và kiểm tra xem các khuyến nghị trong báo cáo có bao quát hết vấn đề hay không.
 
@@ -51,7 +51,7 @@ Cả hai tình huống dưới đây đều dùng chung một file PDF báo cáo
 2. Trong danh sách agent ở thanh bên trái, tìm **Researcher**. Anh/chị cũng có thể mở bằng cách gõ `@Researcher` trong ô chat
 
 > [!TIP]
-> Researcher là một trong các **frontier agent** của Microsoft — dùng mô hình suy luận nâng cao. Nó xuất sắc ở việc phân tích tài liệu sâu, đối chiếu chéo nhiều phần và tổng hợp thông tin phức tạp.
+> Researcher là một trong các **frontier agent** của Microsoft - dùng mô hình suy luận nâng cao. Nó xuất sắc ở việc phân tích tài liệu sâu, đối chiếu chéo nhiều phần và tổng hợp thông tin phức tạp.
 
 ### Bước 2: (Khuyến nghị) Chọn chế độ Critique
 
@@ -70,13 +70,13 @@ Sau khi file đã tải lên, dán prompt sau và nhấn **Send**:
 
 > **PROMPT:**
 >
-> Tạo một bản tóm tắt điều hành (executive briefing) cho Tổng Giám đốc, nêu năm vấn đề vận hành cấp bách nhất, nguyên nhân gốc rễ, tác động tài chính và giải pháp khuyến nghị cho từng vấn đề — tất cả đều lấy nguồn từ báo cáo này.
+> Tạo một bản tóm tắt điều hành (executive briefing) cho Tổng Giám đốc, nêu năm vấn đề vận hành cấp bách nhất, nguyên nhân gốc rễ, tác động tài chính và giải pháp khuyến nghị cho từng vấn đề - tất cả đều lấy nguồn từ báo cáo này.
 
 > [!NOTE]
-> Researcher thường sẽ hỏi lại một câu làm rõ về đối tượng người đọc, cách định nghĩa "cấp bách" và độ dài mong muốn. Hãy nhấn vào một gợi ý (suggestion chip) hoặc gõ "cứ tiến hành" / "proceed" rồi nhấn **Send** — nhấn chip chỉ điền vào ô chat chứ không tự gửi. Sau khi anh/chị trả lời, Researcher sẽ bắt đầu suy luận.
+> Researcher thường sẽ hỏi lại một câu làm rõ về đối tượng người đọc, cách định nghĩa "cấp bách" và độ dài mong muốn. Hãy nhấn vào một gợi ý (suggestion chip) hoặc gõ "cứ tiến hành" / "proceed" rồi nhấn **Send** - nhấn chip chỉ điền vào ô chat chứ không tự gửi. Sau khi anh/chị trả lời, Researcher sẽ bắt đầu suy luận.
 
 > [!NOTE]
-> **Quan trọng:** Researcher là agent suy luận sâu — với một PDF ~20 trang, một prompt thường mất **10–25 phút** để cho kết quả hoàn chỉnh. Anh/chị **không cần ngồi chờ**: cứ gửi prompt, chuyển sang Tình huống 4 (Analyst), rồi quay lại khi danh sách chat báo Researcher đã xong. Nếu sau ~25 phút vẫn chưa xong, nhấn **Stop** và dùng kết quả tạm.
+> **Quan trọng:** Researcher là agent suy luận sâu - với một PDF ~20 trang, một prompt thường mất **10–25 phút** để cho kết quả hoàn chỉnh. Anh/chị **không cần ngồi chờ**: cứ gửi prompt, chuyển sang Tình huống 2 (Analyst), rồi quay lại khi danh sách chat báo Researcher đã xong. Nếu hết giờ lab mà Researcher vẫn đang chạy, cứ để nguyên tab và chuyển sang Lab 5 - anh/chị có thể xem kết quả sau buổi học. Nếu sau ~25 phút vẫn chưa xong, nhấn **Stop** và dùng kết quả tạm.
 
 ### Bước 5: Quan sát kết quả
 
@@ -89,7 +89,7 @@ Khi Researcher trả lời, hãy quan sát cách agent:
 - Tạo ra một bản tóm tắt có cấu trúc, sẵn sàng trình lãnh đạo
 
 > [!TIP]
-> Sức mạnh của prompt này nằm ở việc buộc agent **tổng hợp chéo nhiều phần** — không phần đơn lẻ nào chứa đủ câu trả lời. Thử hỏi tiếp: *"Lập luận phản biện mạnh nhất chống lại khuyến nghị hàng đầu của anh/chị là gì?"* để xem Researcher tư duy phản biện.
+> Sức mạnh của prompt này nằm ở việc buộc agent **tổng hợp chéo nhiều phần** - không phần đơn lẻ nào chứa đủ câu trả lời. Thử hỏi tiếp: *"Lập luận phản biện mạnh nhất chống lại khuyến nghị hàng đầu của anh/chị là gì?"* để xem Researcher tư duy phản biện.
 
 ### Xuất kết quả
 
@@ -97,11 +97,11 @@ Nhấn **Edit in Pages** ở cuối câu trả lời để mở trong trình so�
 
 ---
 
-## Tình huống 4: Mô hình tài chính với Analyst agent
+## Tình huống 2: Mô hình tài chính với Analyst agent
 
 > **Bối cảnh:** Báo cáo Contoso Grand Hotel đề xuất 2,975 triệu USD đầu tư vốn cho mười sáng kiến, nhưng chỉ đưa ra thời gian hoàn vốn đơn giản (simple payback). Là Giám đốc Tài chính (CFO), anh/chị cần phân tích NPV và IRR đúng chuẩn trước khi phê duyệt. Anh/chị sẽ dùng Analyst agent để dựng phân tích này từ dữ liệu báo cáo.
 
-Trong khi Researcher (Tình huống 3) vẫn đang suy luận ở nền, hãy chuyển sang **Analyst agent** để làm việc với cùng file báo cáo.
+Trong khi Researcher (Tình huống 1) vẫn đang suy luận ở nền, hãy chuyển sang **Analyst agent** để làm việc với cùng file báo cáo.
 
 ### Bước 1: Mở Analyst agent
 
@@ -109,14 +109,14 @@ Trong khi Researcher (Tình huống 3) vẫn đang suy luận ở nền, hãy ch
 2. Chọn **Analyst** từ bộ chọn agent, hoặc gõ `@Analyst` trong ô chat
 
 > [!TIP]
-> Nếu **Researcher** giỏi suy luận và tổng hợp, thì **Analyst** được xây riêng cho công việc **nặng về dữ liệu** — trích bảng từ tài liệu, tính toán, dựng mô hình, tạo biểu đồ và xuất file có cấu trúc như Excel.
+> Nếu **Researcher** giỏi suy luận và tổng hợp, thì **Analyst** được xây riêng cho công việc **nặng về dữ liệu** - trích bảng từ tài liệu, tính toán, dựng mô hình, tạo biểu đồ và xuất file có cấu trúc như Excel.
 
 ### Bước 2: Tải file lên
 
-Nhấn **+ (Add and manage sources)** → **Upload images and files** → chọn **cùng file PDF** anh/chị đã dùng ở Tình huống 3.
+Nhấn **+ (Add and manage sources)** → **Upload images and files** → chọn **cùng file PDF** anh/chị đã dùng ở Tình huống 1.
 
 > [!NOTE]
-> Anh/chị dùng lại đúng file PDF của Tình huống 3, nhưng với một agent hoàn toàn khác. Đây là minh chứng cho việc các frontier agent khác nhau có thể khai thác giá trị khác nhau từ cùng một tài liệu nguồn.
+> Anh/chị dùng lại đúng file PDF của Tình huống 1, nhưng với một agent hoàn toàn khác. Đây là minh chứng cho việc các frontier agent khác nhau có thể khai thác giá trị khác nhau từ cùng một tài liệu nguồn.
 
 ### Bước 3: Gửi prompt phân tích tài chính
 
@@ -132,7 +132,7 @@ Dán prompt sau và nhấn **Send**:
 >
 > Giả định ROI hàng năm bắt đầu từ Năm 1 và không đổi trong 5 năm. Với hiện đại hoá thang máy (R5), giả định khoản đầu tư 1,2 triệu USD được chia đều cho Năm 0 và Năm 1, lợi nhuận bắt đầu từ Năm 2. Với các chương trình chi phí thường niên (R7, R10), coi khoản đầu tư hàng năm là chi phí lặp lại mỗi năm.
 >
-> Trình bày kết quả trong một bảng xếp hạng theo NPV (cao đến thấp). Thêm một cột cho biết mỗi khuyến nghị tạo ra hay phá huỷ giá trị ở ngưỡng lãi suất 8%. Sau đó đưa ra khuyến nghị tổng hợp: khoản đầu tư nào nên phê duyệt, khoản nào ở mức cận biên, khoản nào nên hoãn — thuần tuý dựa trên phân tích tài chính.
+> Trình bày kết quả trong một bảng xếp hạng theo NPV (cao đến thấp). Thêm một cột cho biết mỗi khuyến nghị tạo ra hay phá huỷ giá trị ở ngưỡng lãi suất 8%. Sau đó đưa ra khuyến nghị tổng hợp: khoản đầu tư nào nên phê duyệt, khoản nào ở mức cận biên, khoản nào nên hoãn - thuần tuý dựa trên phân tích tài chính.
 
 ### Bước 4: Quan sát kết quả
 
@@ -148,7 +148,7 @@ Hãy quan sát cách Analyst agent:
 - Đưa ra khuyến nghị phê duyệt / hoãn rõ ràng
 
 > [!NOTE]
-> **Quan trọng:** Báo cáo gốc chỉ có thời gian hoàn vốn đơn giản (bỏ qua giá trị thời gian của tiền). Analyst agent tạo ra **NPV và IRR** — các chỉ số tài chính chuẩn mực mà CFO thực sự dùng để đánh giá dự án đầu tư. Đây là ví dụ mạnh mẽ cho thấy Analyst có thể **nâng tầm phân tích vượt ra ngoài tài liệu nguồn**.
+> **Quan trọng:** Báo cáo gốc chỉ có thời gian hoàn vốn đơn giản (bỏ qua giá trị thời gian của tiền). Analyst agent tạo ra **NPV và IRR** - các chỉ số tài chính chuẩn mực mà CFO thực sự dùng để đánh giá dự án đầu tư. Đây là ví dụ mạnh mẽ cho thấy Analyst có thể **nâng tầm phân tích vượt ra ngoài tài liệu nguồn**.
 
 ### Bước 5: Phân tích mở rộng (tuỳ chọn)
 
@@ -177,7 +177,7 @@ Nếu còn thời gian, thử prompt tiếp theo:
 |-----------------|----------|
 | Frontier agents là gì | Agent dựng sẵn dùng mô hình suy luận nâng cao |
 | Dùng Researcher | Phân tích sâu, tổng hợp chéo nhiều phần của tài liệu dài |
-| Quy trình "gửi rồi quay lại" | Researcher chạy lâu — cứ gửi prompt và làm việc khác |
+| Quy trình "gửi rồi quay lại" | Researcher chạy lâu - cứ gửi prompt và làm việc khác |
 | Dùng Analyst | Trích dữ liệu và dựng mô hình NPV/IRR từ báo cáo |
 | Grounding bằng file | Tải PDF lên để neo câu trả lời vào nguồn cụ thể |
 | Chọn đúng agent | Researcher = cố vấn chiến lược; Analyst = chuyên viên tài chính |

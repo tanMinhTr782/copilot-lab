@@ -1,4 +1,4 @@
-# Module 1 — Chào mừng và kiểm tra licence
+# Module 1 - Chào mừng và kiểm tra licence
 
 **Thời lượng:** 10 phút
 
@@ -6,7 +6,7 @@
 
 ## Chào mừng đến với Microsoft 365 Copilot Hands-on Lab
 
-Chào mừng anh/chị đến với buổi training **Microsoft 365 Copilot — Hands-on Lab**. Đây là buổi thực hành đầu tiên sau khi tài khoản Microsoft 365 Copilot của anh/chị đã được kích hoạt.
+Chào mừng anh/chị đến với buổi training **Microsoft 365 Copilot - Hands-on Lab**. Đây là buổi thực hành đầu tiên sau khi tài khoản Microsoft 365 Copilot của anh/chị đã được kích hoạt.
 
 ---
 
@@ -76,7 +76,7 @@ Trước khi bắt đầu, hãy đảm bảo Copilot đã được kích hoạt:
 | 10:05 – 10:10 | Nghỉ giải lao |
 | 10:10 – 10:35 | Lab 2: Word và PowerPoint |
 | 10:35 – 10:55 | Lab 3: Excel và ứng dụng Copilot |
-| 11:00 – 11:15 | Lab 4: Agent dựng sẵn của Microsoft |
+| 10:55 – 11:15 | Lab 4: Agent dựng sẵn của Microsoft |
 | 11:15 – 11:35 | Lab 5: AI Agent với Agent Builder |
 | 11:35 – 11:40 | Tổng kết và bài tập về nhà |
 

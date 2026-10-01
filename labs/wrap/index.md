@@ -6,7 +6,7 @@
 
 ## Tổng kết buổi học
 
-Chúc mừng! Anh/chị đã hoàn thành **Microsoft 365 Copilot — Hands-on Lab**. 
+Chúc mừng! Anh/chị đã hoàn thành **Microsoft 365 Copilot - Hands-on Lab**. 
 
 Hôm nay anh/chị đã:
 
@@ -71,9 +71,9 @@ Trước buổi training tiếp theo, hãy ghi lại **1 tình huống sử dụ
 
 ## Tài nguyên hữu ích
 
-- [Microsoft Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts) — Thư viện prompt mẫu
-- [Microsoft 365 Copilot Documentation](https://learn.microsoft.com/copilot/microsoft-365/) — Tài liệu chính thức
-- [Copilot Lab](https://copilot.cloud.microsoft/prompts) — Nơi khám phá và lưu prompt
+- [Microsoft Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts) - Thư viện prompt mẫu
+- [Microsoft 365 Copilot Documentation](https://learn.microsoft.com/copilot/microsoft-365/) - Tài liệu chính thức
+- [Copilot Lab](https://copilot.cloud.microsoft/prompts) - Nơi khám phá và lưu prompt
 
 ---
 
