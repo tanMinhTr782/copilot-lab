@@ -1,4 +1,4 @@
-# Lab 2 — Word và PowerPoint
+# Lab 2 - Word và PowerPoint
 
 **Thời lượng:** 25 phút | **Ứng dụng:** Word, PowerPoint
 
@@ -19,7 +19,7 @@ Sau khi hoàn thành lab này, anh/chị sẽ có thể:
 
 ### Tình huống
 
-> **Anh Nam** — *Export Sales Manager, Southern Star Seafood Corporation*
+> **Anh Nam** - *Export Sales Manager, Southern Star Seafood Corporation*
 >
 > Anh Nam đang chuẩn bị gửi hồ sơ giới thiệu sản phẩm và báo giá cho một khách hàng tiềm năng tại Nhật Bản. Tài liệu ban đầu được soạn bằng tiếng Việt nhưng cần phiên bản tiếng Anh. Thay vì sử dụng công cụ dịch bên ngoài, anh dùng Copilot trong Word để dịch trực tiếp, giữ nguyên định dạng và cấu trúc.
 
@@ -82,7 +82,7 @@ Sau khi hoàn thành lab này, anh/chị sẽ có thể:
 
 ### Tình huống
 
-> **Anh Quang** — *Strategic Planning Manager – SEA, Southern Star Seafood Corporation*
+> **Anh Quang** - *Strategic Planning Manager – SEA, Southern Star Seafood Corporation*
 >
 > Anh Quang đang chuẩn bị trình bày kế hoạch mở rộng thị trường xuất khẩu năm 2027 trước Ban Điều hành. Tài liệu hiện có còn dài, nhiều chữ và chưa đồng nhất về hình thức. Anh sử dụng Copilot trong PowerPoint để tạo speaker notes, chuyển slide phức tạp thành nội dung trực quan và chuẩn hóa font chữ.
 

@@ -1,20 +1,20 @@
-// Demo file download links — update SharePoint URLs here when ready
+// Demo file download links - update SharePoint URLs here when ready
 const demoFiles = [
-    { name: 'Southern Star Seafood — Sales Data (Excel)', desc: 'Dữ liệu bán hàng dùng cho Lab 3', icon: 'excel', url: '#' },
+    { name: 'Southern Star Seafood - Sales Data (Excel)', desc: 'Dữ liệu bán hàng dùng cho Lab 3', icon: 'excel', url: '#' },
     { name: 'Đề xuất hợp tác xuất khẩu Nhật Bản (Word)', desc: 'Tài liệu xuất khẩu dùng cho Lab 2', icon: 'word', url: '#' },
     { name: 'Thị trường ngành thủy sản (PowerPoint)', desc: 'Bài thuyết trình dùng cho Lab 2', icon: 'powerpoint', url: '#' },
 ];
 
 // Module definitions with their markdown file paths
 const modules = {
-    'module-0': { title: 'Module 1 — Chào mừng và kiểm tra licence', file: 'labs/module-1/index.md' },
-    'module-1': { title: 'Module 2 — Copilot là gì', file: 'labs/module-2/index.md' },
-    'module-2': { title: 'Module 3 — Nền tảng viết prompt', file: 'labs/module-3/index.md' },
-    'lab-1':    { title: 'Lab 1 — Outlook và Teams', file: 'labs/lab-1/index.md' },
-    'lab-2':    { title: 'Lab 2 — Word và PowerPoint', file: 'labs/lab-2/index.md' },
-    'lab-3':    { title: 'Lab 3 — Excel và ứng dụng Copilot', file: 'labs/lab-3/index.md' },
-    'lab-4':    { title: 'Lab 4 — Agent dựng sẵn của Microsoft', file: 'labs/lab-4/index.md' },
-    'lab-5':    { title: 'Lab 5 — AI Agent với Agent Builder', file: 'labs/lab-5/index.md' },
+    'module-0': { title: 'Module 1 - Chào mừng và kiểm tra licence', file: 'labs/module-1/index.md' },
+    'module-1': { title: 'Module 2 - Copilot là gì', file: 'labs/module-2/index.md' },
+    'module-2': { title: 'Module 3 - Nền tảng viết prompt', file: 'labs/module-3/index.md' },
+    'lab-1':    { title: 'Lab 1 - Outlook và Teams', file: 'labs/lab-1/index.md' },
+    'lab-2':    { title: 'Lab 2 - Word và PowerPoint', file: 'labs/lab-2/index.md' },
+    'lab-3':    { title: 'Lab 3 - Excel và ứng dụng Copilot', file: 'labs/lab-3/index.md' },
+    'lab-4':    { title: 'Lab 4 - Agent dựng sẵn của Microsoft', file: 'labs/lab-4/index.md' },
+    'lab-5':    { title: 'Lab 5 - AI Agent với Agent Builder', file: 'labs/lab-5/index.md' },
     'wrap':     { title: 'Tổng kết và bài tập về nhà', file: 'labs/wrap/index.md' }
 };
 
@@ -147,6 +147,10 @@ function buildPromptCard(innerHtml) {
     // Extract plain text for clipboard (strip tags)
     const tmp = document.createElement('div');
     tmp.innerHTML = innerHtml;
+    // textContent drops <ol> numbering, so write the numbers back in
+    tmp.querySelectorAll('ol').forEach(ol => {
+        Array.from(ol.children).forEach((li, i) => li.prepend(`${ol.start + i}. `));
+    });
     const plainText = (tmp.textContent || tmp.innerText || '').trim();
 
     return `<div class="prompt-card">
@@ -310,7 +314,7 @@ function escapeHtml(str) {
 
 // Utility: escape for HTML attribute values
 function escapeAttr(str) {
-    return str.replace(/"/g, '&quot;').replace(/\n/g, ' ');
+    return str.replace(/"/g, '&quot;').replace(/\n/g, '&#10;');
 }
 
 // Update the sidebar navigation

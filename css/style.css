@@ -7,12 +7,12 @@
 
 :root {
     /* ---- Core palette: black / white / deep navy ---- */
-    --ink: #0b1420;          /* near-black — header, footer, headings */
+    --ink: #0b1420;          /* near-black - header, footer, headings */
     --ink-soft: #16202c;     /* primary body text */
     --navy: #0a2a4e;         /* primary brand (deep blue) */
     --navy-700: #0e3a6b;     /* gradient / hover */
     --navy-900: #061b33;     /* darkest */
-    --blue: #1c5fb0;         /* interactive accent — links, focus */
+    --blue: #1c5fb0;         /* interactive accent - links, focus */
     --blue-strong: #17509a;
     --blue-tint: #eef4fb;    /* light surface tint */
     --blue-tint-2: #e0ebf8;

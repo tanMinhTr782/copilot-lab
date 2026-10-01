@@ -1,4 +1,4 @@
-# Lab 3 — Excel và ứng dụng Copilot
+# Lab 3 - Excel và ứng dụng Copilot
 
 **Thời lượng:** 20 phút | **Ứng dụng:** Excel, Microsoft 365 Copilot Chat
 
@@ -19,7 +19,7 @@ Sau khi hoàn thành lab này, anh/chị sẽ có thể:
 
 ### Tình huống
 
-> **Chị Minh Anh** — *Chief Operating Officer, Southern Star Seafood Corporation*
+> **Chị Minh Anh** - *Chief Operating Officer, Southern Star Seafood Corporation*
 >
 > Chị Minh Anh đang chuẩn bị trình bày kết quả kinh doanh trước Ban Điều hành. Dữ liệu gồm nhiều giao dịch và khó nhận biết nhanh những điểm đáng chú ý. Chị sử dụng Copilot trong Excel để xác định khu vực doanh thu cao nhất, nhóm sản phẩm có biên lợi nhuận thấp nhất và tạo biểu đồ trực quan.
 
@@ -92,7 +92,7 @@ Sau khi hoàn thành lab này, anh/chị sẽ có thể:
 
 ### Giới thiệu
 
-Microsoft 365 Copilot Chat (truy cập tại [m365.cloud.microsoft](https://m365.cloud.microsoft)) là trợ lý AI có khả năng truy vấn dữ liệu xuyên suốt các ứng dụng Microsoft 365 — email, file, cuộc họp, chat.
+Microsoft 365 Copilot Chat (truy cập tại [m365.cloud.microsoft](https://m365.cloud.microsoft)) là trợ lý AI có khả năng truy vấn dữ liệu xuyên suốt các ứng dụng Microsoft 365 - email, file, cuộc họp, chat.
 
 ### Bài tập 5: Hỏi đáp xuyên ứng dụng
 

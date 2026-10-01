@@ -1,4 +1,4 @@
-# Lab 1 — Outlook và Teams
+# Lab 1 - Outlook và Teams
 
 **Thời lượng:** 25 phút | **Ứng dụng:** Outlook, Teams
 
@@ -16,7 +16,7 @@ Sau khi hoàn thành lab này, anh/chị sẽ có thể:
 
 ## Tình huống thực tế
 
-> **Anh Tuấn** — *Chief Financial Officer, Southern Star Seafood Corporation*
+> **Anh Tuấn** - *Chief Financial Officer, Southern Star Seafood Corporation*
 >
 > Anh Tuấn vừa trở về sau chuyến công tác 3 ngày và phải xử lý hơn 50 email chưa đọc cùng nhiều chuỗi trao đổi kéo dài về dòng tiền, công nợ, đầu tư và kế hoạch tài chính. Anh sử dụng Microsoft 365 Copilot trong Outlook để nhanh chóng nắm bắt tình hình.
 
@@ -72,7 +72,7 @@ Sau khi hoàn thành lab này, anh/chị sẽ có thể:
 > Soạn email xác nhận tham gia cuộc họp vào tuần tới và đề nghị bên kia gửi thời gian phù hợp.
 
 > [!NOTE]
-> Sau khi Copilot tạo bản nháp, anh/chị nên đọc lại và chỉnh sửa trước khi gửi. Copilot là trợ lý — anh/chị vẫn là người ra quyết định cuối cùng.
+> Sau khi Copilot tạo bản nháp, anh/chị nên đọc lại và chỉnh sửa trước khi gửi. Copilot là trợ lý - anh/chị vẫn là người ra quyết định cuối cùng.
 
 ---
 
@@ -80,7 +80,7 @@ Sau khi hoàn thành lab này, anh/chị sẽ có thể:
 
 ### Tình huống
 
-> **Chị Vy** — *Director of International Sales, Southern Star Seafood Corporation*
+> **Chị Vy** - *Director of International Sales, Southern Star Seafood Corporation*
 >
 > Chị Vy tham gia cuộc họp trực tuyến với các nhà phân phối quốc tế để thảo luận về kế hoạch xuất khẩu thủy sản. Chị sử dụng Copilot trong Teams để hỏi đáp và tóm tắt nội dung, cùng Translated Live Captions để vượt rào cản ngôn ngữ.
 
